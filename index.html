@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-md sticky-top mynavbar">
       <div class="container">
         <a class="navbar-brand" href="#">Onwil</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler border-0 hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -174,10 +174,18 @@
             },
         });
 
-        
-        
-
     </script>
-    
+    <script>
+       const hamburger = document.querySelectorAll('.navbar-toggler');
+        const stickyTop = document.querySelectorAll(".sticky-top");
+        hamburger[0].addEventListener('click', ()=> {
+          stickyTop[0].style.overflow = 'visible';
+        });
+        
+        const offcanvas = document.querySelectorAll('.offcanvas');
+        offcanvas[0].addEventListener('hidden.bs.offcanvas', ()=> {
+          stickyTop[0].style.overflow = 'hidden';
+        });
+    </script>
   </body>
 </html>
