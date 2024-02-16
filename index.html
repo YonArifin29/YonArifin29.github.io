@@ -1,49 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yon & Dewil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Work+Sans:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Work+Sans:wght@100;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- end font -->
 
     <!-- countdown -->
-    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
-     <!-- end countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <!-- end countdown -->
 
-     <!-- my style -->
-    <link rel="stylesheet" href="style.css">
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css" />
 
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-
-    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-center text-white">
-        <main>
-            <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
-            <h1>Yon & Dewil</h1>
-            <p>Akan melangsungkan resepsi pernikahan dalam: </p>
-            <div class="simply-countdown">
-
-            </div>
-            <a href="#home" class="btn btn-lg mt-4" id="play">Lihat Undangan</a>
-        </main>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Yon & Dewil</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a
+          href="#home"
+          class="btn btn-lg mt-4"
+          id="play"
+          onclick="enableScroll()"
+          >Lihat Undangan</a
+        >
+      </main>
     </section>
     <nav class="navbar navbar-expand-md sticky-top mynavbar">
       <div class="container">
         <a class="navbar-brand" href="#">Onwil</a>
-        <button class="navbar-toggler border-0 hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button
+          class="navbar-toggler border-0 hamburger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Onwil</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
@@ -52,20 +85,27 @@
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gift">Gift</a>
+              <a class="nav-link" href="#gifts">Gift</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
-    
+
     <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
-            <h3>Diselenggarakan pada tanggal 29 April 2028 di Menara Eiffel, Paris, Prancis.</h3>
-            <p>Oleh karena itu, dengan segala hormat dan paksaan, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i untuk hadir di acara pernikahan kami.</p>
+            <h3>
+              Diselenggarakan pada tanggal 29 April 2028 di Menara Eiffel,
+              Paris, Prancis.
+            </h3>
+            <p>
+              Oleh karena itu, dengan segala hormat dan paksaan, kami bermaksud
+              untuk mengundang Bapak/Ibu, Saudara/i untuk hadir di acara
+              pernikahan kami.
+            </p>
           </div>
         </div>
 
@@ -74,11 +114,23 @@
             <div class="row">
               <div class="col-8 text-end">
                 <h3>Yon Arifin</h3>
-                <p>Anak tampan dan pemberani, suka menolong dan rajin menabung, baik hati dan tidak sombong, sayang teman dan keluarga. Satusatunya di dunia ini (anjayy pick me boyy, hahahah )</p>
-                <p>Putra dari Bpk. Azka <br> dan <br> Ibu Calista</p>
+                <p>
+                  Anak tampan dan pemberani, suka menolong dan rajin menabung,
+                  baik hati dan tidak sombong, sayang teman dan keluarga.
+                  Satusatunya di dunia ini (anjayy pick me boyy, hahahah )
+                </p>
+                <p>
+                  Putra dari Bpk. Azka <br />
+                  dan <br />
+                  Ibu Calista
+                </p>
               </div>
               <div class="col-4">
-                <img src="img/pria3.png" alt="Yon Arifin" class=" img-responsive rounded-circle">
+                <img
+                  src="img/pria3.png"
+                  alt="Yon Arifin"
+                  class="img-responsive rounded-circle"
+                />
               </div>
             </div>
           </div>
@@ -86,12 +138,24 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-4">
-                <img src="img/wanita2.png" alt="Dewil" class=" img-responsive rounded-circle">
+                <img
+                  src="img/wanita2.png"
+                  alt="Dewil"
+                  class="img-responsive rounded-circle"
+                />
               </div>
               <div class="col-8">
                 <h3>Dewi Lestiani</h3>
-                <p>Misterius person, baik hati dan tidak sombong, orangnya sabar dan penyayang, suka lama kalo balas chat(maklum susah sinyal sinyal)</p>
-                <p>Putri dari Bpk. Nanda <br> dan <br> Ibu Dinda</p>
+                <p>
+                  Misterius person, baik hati dan tidak sombong, orangnya sabar
+                  dan penyayang, suka lama kalo balas chat(maklum susah sinyal
+                  sinyal)
+                </p>
+                <p>
+                  Putri dari Bpk. Nanda <br />
+                  dan <br />
+                  Ibu Dinda
+                </p>
               </div>
             </div>
           </div>
@@ -104,10 +168,23 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat: Menara Eiffel, Paris. <br>Jl. Champ de Mars, 5 Av. Anatole France, 75007 Paris, Prancis</p>
-            <a href="https://goo.gl/maps/FpFUQ7NvoJj1iG6v8" target="_blank" class="btn btn-light my-4">Open Maps</a>
+            <p class="alamat">
+              Alamat: Menara Eiffel, Paris. <br />Jl. Champ de Mars, 5 Av.
+              Anatole France, 75007 Paris, Prancis
+            </p>
+            <a
+              href="https://goo.gl/maps/FpFUQ7NvoJj1iG6v8"
+              target="_blank"
+              class="btn btn-light my-4"
+              >Open Maps</a
+            >
             <p class="description">
-              Diharapkan untuk tidak salah alamat dan tanggal. Jika tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, artinya anda tersesat karena buta maps(biasanya cewe yang suka begini) atau salah jadwal. Diinggatkan lagi jangan sampai salah, kalau nyasar bisa jadi Anda sampai ke negara tetangganya karna Prancis tidak seluas negara Konoha.
+              Diharapkan untuk tidak salah alamat dan tanggal. Jika tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, artinya anda tersesat karena buta maps(biasanya cewe
+              yang suka begini) atau salah jadwal. Diinggatkan lagi jangan
+              sampai salah, kalau nyasar bisa jadi Anda sampai ke negara
+              tetangganya karna Prancis tidak seluas negara Konoha.
             </p>
           </div>
         </div>
@@ -115,15 +192,13 @@
         <div class="row justify-content-center mt-4">
           <div class="col-md-7 col-10">
             <div class="card text-center text-bg-light">
-              <div class="card-header">
-                Akad Nikah & Resepsi
-              </div>
+              <div class="card-header">Akad Nikah & Resepsi</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <i class="bi bi-clock d-block"></i>
                     <div class="col-md-12 d-flex justify-content-center">
-                      <div class="row ">
+                      <div class="row">
                         <div class="col-md-12">Akad Nikah</div>
                         <span>08.00 - 10.00</span>
                       </div>
@@ -139,8 +214,12 @@
                   </div>
                 </div>
               </div>
-              <div class="card-footer ">
-                Saat acara berlangsung diharapkan untuk tidak makan, minum, scroll tik-tok dengan volume max, membuka Wahatsapp(padahal gak ada yang ngechat), lari-lari, dan naik menara sehingga acara bisa merlangsung denan lancar, aman, dan terkendali(jangan barbar yaa).
+              <div class="card-footer">
+                Saat acara berlangsung diharapkan untuk tidak makan, minum,
+                scroll tik-tok dengan volume max, membuka Wahatsapp(padahal gak
+                ada yang ngechat), lari-lari, dan naik menara sehingga acara
+                bisa merlangsung denan lancar, aman, dan terkendali(jangan
+                barbar yaa).
               </div>
             </div>
           </div>
@@ -154,7 +233,11 @@
           <div class="col-md-8 col-10 text-center">
             <span>Bagaimana Cinta Kami Tumbuh</span>
             <h2>Cerita Kami</h2>
-            <p>Semua berawal dari ruangan kecil Us Radio, ruangan itu menjadi saksi cinta kami tumbuh hari-demi hari. Ketika pertama kali bertemu kita langsung terkoneksi satu sama lain</p>
+            <p>
+              Semua berawal dari ruangan kecil Us Radio, ruangan itu menjadi
+              saksi cinta kami tumbuh hari-demi hari. Ketika pertama kali
+              bertemu kita langsung terkoneksi satu sama lain
+            </p>
           </div>
         </div>
 
@@ -162,7 +245,10 @@
           <div class="col">
             <ul class="timeline">
               <li>
-                <div class="timeline-image" style="background-image: url(img/fto1.jpg);"></div>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/fto1.jpg)"
+                ></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3>Pertama Bertemu</h3>
@@ -170,13 +256,17 @@
                   </div>
                   <div class="timeline-body">
                     <p>
-                      Bertemu di ruangan US Radio, di hari itu aku(Yon) bertemu dengannya(Dewil), kita sama-sama mendaftar di UKM itu.
+                      Bertemu di ruangan US Radio, di hari itu aku(Yon) bertemu
+                      dengannya(Dewil), kita sama-sama mendaftar di UKM itu.
                     </p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
-                <div class="timeline-image" style="background-image: url(img/wanita2.png);"></div>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/wanita2.png)"
+                ></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3>Mulai Serius</h3>
@@ -184,13 +274,21 @@
                   </div>
                   <div class="timeline-body">
                     <p>
-                      Di tanggal itu aku(Yon) mulai mengunkapkan perasaanku karna aku tidak mau hanya sekedar teman, I want more than that so I just tell my feeling to her and she said yes(klo gak diterima gak mngkin sampai titik ini dong, hahah) dan akhirnya kita mulai berpacaran dan menikmati hari-hari yang melelahkan bersama.
+                      Di tanggal itu aku(Yon) mulai mengunkapkan perasaanku
+                      karna aku tidak mau hanya sekedar teman, I want more than
+                      that so I just tell my feeling to her and she said yes(klo
+                      gak diterima gak mngkin sampai titik ini dong, hahah) dan
+                      akhirnya kita mulai berpacaran dan menikmati hari-hari
+                      yang melelahkan bersama.
                     </p>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="timeline-image" style="background-image: url(img/fto3.jpg);"></div>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/fto3.jpg)"
+                ></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3>Tunangan</h3>
@@ -198,13 +296,19 @@
                   </div>
                   <div class="timeline-body">
                     <p>
-                      Setelah mengenal satu sama lain kita memutuskan untuk bertunangan karena kita sudah cape pacaran dan ingin melanjutkan ke hubungan yang lebih serius(pacaran lama-lama cuman hanya menambah dosa).
+                      Setelah mengenal satu sama lain kita memutuskan untuk
+                      bertunangan karena kita sudah cape pacaran dan ingin
+                      melanjutkan ke hubungan yang lebih serius(pacaran
+                      lama-lama cuman hanya menambah dosa).
                     </p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
-                <div class="timeline-image" style="background-image: url(img/wanita2.png);"></div>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/wanita2.png)"
+                ></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3>Menikah</h3>
@@ -212,7 +316,9 @@
                   </div>
                   <div class="timeline-body">
                     <p>
-                      Tak tersa, waktu begitu cepat berlalu. Banyak hari yang sudah kita lalui dan kita memutuskan untuk melalui hari-hari di masa depan bersama-sama.
+                      Tak tersa, waktu begitu cepat berlalu. Banyak hari yang
+                      sudah kita lalui dan kita memutuskan untuk melalui
+                      hari-hari di masa depan bersama-sama.
                     </p>
                   </div>
                 </div>
@@ -233,81 +339,279 @@
           </div>
         </div>
 
-        <div class="row row-cols-md-3 row-col-sm-2 rows-col-1 d-flex justify-content-around" >
+        <div
+          class="row row-cols-md-3 row-col-sm-2 rows-col-1 d-flex justify-content-around"
+        >
           <div class="col mt-3">
-            <a href="img/gallery/img1.png"  data-toggle="lightbox" data-caption="orang sedang bermain batminton" data-gallery="mygallery"><img src="img/gallery/thumbnail/img1.png" alt="yon" class="img-fluid w-100 rounded"></a>
+            <a
+              href="img/gallery/img1.png"
+              data-toggle="lightbox"
+              data-caption="orang sedang bermain batminton"
+              data-gallery="mygallery"
+              ><img
+                src="img/gallery/thumbnail/img1.png"
+                alt="yon"
+                class="img-fluid w-100 rounded"
+            /></a>
           </div>
 
           <div class="col mt-3">
-            <a href="img/gallery/jiso.png"  data-toggle="lightbox" data-caption="ayng jisoo" data-gallery="mygallery"><img src="img/gallery/thumbnail/jiso.png" alt="yon" class="img-fluid w-100 rounded"></a>
+            <a
+              href="img/gallery/jiso.png"
+              data-toggle="lightbox"
+              data-caption="ayng jisoo"
+              data-gallery="mygallery"
+              ><img
+                src="img/gallery/thumbnail/jiso.png"
+                alt="yon"
+                class="img-fluid w-100 rounded"
+            /></a>
           </div>
-          
+
           <div class="col mt-3">
-            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="mygallery" class="col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            <a
+              href="https://unsplash.it/1200/768.jpg?image=251"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              class="col-sm-4"
+            >
+              <img
+                src="https://unsplash.it/600.jpg?image=251"
+                class="img-fluid"
+              />
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="mygallery" class="col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+            <a
+              href="https://unsplash.it/1200/768.jpg?image=254"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              class="col-sm-4"
+            >
+              <img
+                src="https://unsplash.it/600.jpg?image=254"
+                class="img-fluid"
+              />
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox" data-gallery="mygallery" class="col-sm-4">
-              <img src="https://unsplash.it/600.jpg?image=258" class="img-fluid">
+            <a
+              href="https://unsplash.it/1200/768.jpg?image=258"
+              data-toggle="lightbox"
+              data-gallery="mygallery"
+              class="col-sm-4"
+            >
+              <img
+                src="https://unsplash.it/600.jpg?image=258"
+                class="img-fluid"
+              />
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section id="footer" class="footer d-flex align-items-center justify-content-around">
-     <div class="container">
-      <div class="row">
-        <div class="col-4">Cp: 0896680177xx</div>
-        <div class="col-4">Email: yonarifixxn@gmail.com</div>
-        <div class="col-4">IG: <a href="https://www.instagram.com/yoarifin_29/">@yoarifin_29</a></div>
+    <section id="rsvp" class="rspv">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form dibawah ini untuk mengonfirmasi kehadiran.</p>
+          </div>
+        </div>
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxnH6HHbC9IiyHSoAr6f24rSshNN1bPhVKBfnvVgXBxU2K0oBPRIDPy_7PrzpJ5qiCr/exec"
+          id="my-form"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="name" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                value="1"
+                min="1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
       </div>
-     </div>
+    </section>
+    <div id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              possimus.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BRI</div>
+                123455666 - Yon Arifin
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">Mandiri</div>
+                123455666 - Melati
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">DANA</div>
+                <img src="img/qr.jpeg" alt="" width="150px" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      id="footer"
+      class="footer d-flex align-items-center justify-content-around"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <!-- <small class="block">&copy; 2024 Yon Arifin.</small> -->
+            <small class="block"
+              >Design by
+              <a href="https://instagram.com/yonarifin29" class="block"
+                >@Yon Arifin</a
+              ></small
+            >
+            <ul class="mt-3">
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <script>
-        let song = new Audio('audio/melepas-masa-lajang.mp3');
-        const play = document.getElementById("play");
+      let song = new Audio("audio/melepas-masa-lajang.mp3");
+      const play = document.getElementById("play");
 
-        play.addEventListener("click", ()=> {
-         song.play();
-        });
+      play.addEventListener("click", () => {
+        song.play();
+      });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <script src="countdown/simplyCountdown.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script>
-        simplyCountdown('.simply-countdown', {
-            year: 2028, // required
-            month: 4, // required
-            day: 29, // required
-            hours: 9, // Default is 0 [0-23] integer
-            minutes: 0, // Default is 0 [0-59] integer
-            seconds: 0, // Default is 0 [0-59] integer
-            words: { //words displayed into the countdown
-                days: { singular: 'hari', plural: 'hari' },
-                hours: { singular: 'jam', plural: 'jam' },
-                minutes: { singular: 'menit', plural: 'menit' },
-                seconds: { singular: 'detik', plural: 'detik' }
-            },
-        });
-
+      simplyCountdown(".simply-countdown", {
+        year: 2028, // required
+        month: 4, // required
+        day: 29, // required
+        hours: 9, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
     </script>
     <script>
-       const hamburger = document.querySelectorAll('.navbar-toggler');
-        const stickyTop = document.querySelectorAll(".sticky-top");
-        hamburger[0].addEventListener('click', ()=> {
-          stickyTop[0].style.overflow = 'visible';
+      const hamburger = document.querySelectorAll(".navbar-toggler");
+      const stickyTop = document.querySelectorAll(".sticky-top");
+      hamburger[0].addEventListener("click", () => {
+        stickyTop[0].style.overflow = "visible";
+      });
+
+      const offcanvas = document.querySelectorAll(".offcanvas");
+      offcanvas[0].addEventListener("hidden.bs.offcanvas", () => {
+        stickyTop[0].style.overflow = "hidden";
+      });
+    </script>
+    <script>
+      const rootElement = document.querySelector(":root");
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollLeft, scrollTop);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        localStorage.setItem("opened", "true");
+      }
+
+      if (!localStorage.getItem("opened")) {
+        disableScroll();
+      }
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi kehadiran berhasil!");
+            getElementById("name").value = "";
+          });
         });
-        
-        const offcanvas = document.querySelectorAll('.offcanvas');
-        offcanvas[0].addEventListener('hidden.bs.offcanvas', ()=> {
-          stickyTop[0].style.overflow = 'hidden';
-        });
+      });
     </script>
   </body>
 </html>
+
+<!-- menit 37.00 part 4 -->
